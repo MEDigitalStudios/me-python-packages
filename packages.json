@@ -15,13 +15,35 @@
       "x86":         "https://chaquo.com/pypi-13.1/numpy/numpy-1.26.2-0-cp310-cp310-android_21_x86.whl"
     }
   },
+  "pytz": {
+    "display_name": "pytz",
+    "version": "2024.1",
+    "description": "Временные зоны для Python — нужен для pandas",
+    "category": "science",
+    "size_mb": 0.5,
+    "depends": [],
+    "pip_name": "pytz",
+    "pure_python": true,
+    "pip_install": true
+  },
+  "python-dateutil": {
+    "display_name": "python-dateutil",
+    "version": "2.9.0",
+    "description": "Расширенная работа с датами — нужен для pandas",
+    "category": "science",
+    "size_mb": 0.5,
+    "depends": [],
+    "pip_name": "python-dateutil",
+    "pure_python": true,
+    "pip_install": true
+  },
   "pandas": {
     "display_name": "Pandas",
     "version": "2.1.3",
     "description": "Анализ и обработка табличных данных",
     "category": "science",
     "size_mb": 11.0,
-    "depends": ["numpy"],
+    "depends": ["numpy", "pytz", "python-dateutil"],
     "pip_name": "pandas",
     "pure_python": false,
     "abis": {
