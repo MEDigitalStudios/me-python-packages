@@ -1,6 +1,4 @@
 {
-  "_comment": "native_syslib=true → .so идут в chaquopy/lib (не в pylibs)",
-
   "chaquopy-libcxx": {
     "display_name": "libc++ (системная)",
     "version": "11000",
