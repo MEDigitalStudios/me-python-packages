@@ -72,6 +72,57 @@
       "x86": "https://chaquo.com/pypi-7.0/chaquopy-libffi/chaquopy_libffi-3.3-2-py3-none-android_16_x86.whl"
     }
   },
+  "chaquopy-libpng": {
+    "display_name": "libpng (системная)",
+    "version": "1.6.34",
+    "description": "PNG библиотека — нужна OpenCV, Matplotlib",
+    "category": "system",
+    "size_mb": 0.2,
+    "depends": [],
+    "pip_name": "chaquopy_libpng",
+    "pure_python": false,
+    "native_syslib": true,
+    "abis": {
+      "arm64-v8a": "https://chaquo.com/pypi-7.0/chaquopy-libpng/chaquopy_libpng-1.6.34-1-py3-none-android_21_arm64_v8a.whl",
+      "armeabi-v7a": "https://chaquo.com/pypi-7.0/chaquopy-libpng/chaquopy_libpng-1.6.34-1-py3-none-android_16_armeabi_v7a.whl",
+      "x86_64": "https://chaquo.com/pypi-7.0/chaquopy-libpng/chaquopy_libpng-1.6.34-1-py3-none-android_21_x86_64.whl",
+      "x86": "https://chaquo.com/pypi-7.0/chaquopy-libpng/chaquopy_libpng-1.6.34-1-py3-none-android_16_x86.whl"
+    }
+  },
+  "chaquopy-libjpeg": {
+    "display_name": "libjpeg (системная)",
+    "version": "1.5.3",
+    "description": "JPEG библиотека — нужна OpenCV, Pillow",
+    "category": "system",
+    "size_mb": 0.2,
+    "depends": [],
+    "pip_name": "chaquopy_libjpeg",
+    "pure_python": false,
+    "native_syslib": true,
+    "abis": {
+      "arm64-v8a": "https://chaquo.com/pypi-7.0/chaquopy-libjpeg/chaquopy_libjpeg-1.5.3-1-py3-none-android_21_arm64_v8a.whl",
+      "armeabi-v7a": "https://chaquo.com/pypi-7.0/chaquopy-libjpeg/chaquopy_libjpeg-1.5.3-1-py3-none-android_16_armeabi_v7a.whl",
+      "x86_64": "https://chaquo.com/pypi-7.0/chaquopy-libjpeg/chaquopy_libjpeg-1.5.3-1-py3-none-android_21_x86_64.whl",
+      "x86": "https://chaquo.com/pypi-7.0/chaquopy-libjpeg/chaquopy_libjpeg-1.5.3-1-py3-none-android_16_x86.whl"
+    }
+  },
+  "chaquopy-freetype": {
+    "display_name": "freetype (системная)",
+    "version": "2.9.1",
+    "description": "Шрифтовая библиотека — нужна Matplotlib, Pillow",
+    "category": "system",
+    "size_mb": 0.3,
+    "depends": [],
+    "pip_name": "chaquopy_freetype",
+    "pure_python": false,
+    "native_syslib": true,
+    "abis": {
+      "arm64-v8a": "https://chaquo.com/pypi-7.0/chaquopy-freetype/chaquopy_freetype-2.9.1-2-py3-none-android_21_arm64_v8a.whl",
+      "armeabi-v7a": "https://chaquo.com/pypi-7.0/chaquopy-freetype/chaquopy_freetype-2.9.1-2-py3-none-android_16_armeabi_v7a.whl",
+      "x86_64": "https://chaquo.com/pypi-7.0/chaquopy-freetype/chaquopy_freetype-2.9.1-2-py3-none-android_21_x86_64.whl",
+      "x86": "https://chaquo.com/pypi-7.0/chaquopy-freetype/chaquopy_freetype-2.9.1-2-py3-none-android_16_x86.whl"
+    }
+  },
   "numpy": {
     "display_name": "NumPy",
     "version": "1.26.2",
@@ -119,6 +170,10 @@
     "size_mb": 8.6,
     "depends": [
       "chaquopy-libcxx",
+      "chaquopy-libgfortran",
+      "chaquopy-openblas",
+      "chaquopy-libpng",
+      "chaquopy-libjpeg",
       "numpy"
     ],
     "pip_name": "cv2",
@@ -139,6 +194,8 @@
     "size_mb": 6.6,
     "depends": [
       "chaquopy-libcxx",
+      "chaquopy-freetype",
+      "chaquopy-libpng",
       "numpy"
     ],
     "pip_name": "matplotlib",
@@ -158,7 +215,9 @@
     "category": "vision",
     "size_mb": 0.6,
     "depends": [
-      "chaquopy-libcxx"
+      "chaquopy-libcxx",
+      "chaquopy-libjpeg",
+      "chaquopy-freetype"
     ],
     "pip_name": "PIL",
     "pure_python": false,
