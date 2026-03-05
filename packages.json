@@ -137,7 +137,7 @@
   },
   "six": {
     "display_name": "six",
-    "version": "1.16.0",
+    "version": "1.17.0",
     "description": "Python 2/3 совместимость — нужен python-dateutil",
     "category": "system",
     "size_mb": 0.1,
@@ -146,7 +146,7 @@
     "pure_python": true,
     "native_syslib": false,
     "abis": {
-      "any": "https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl"
+      "any": "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl"
     }
   },
   "python-dateutil": {
@@ -161,11 +161,12 @@
     "native_syslib": false,
     "abis": {
       "any": "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl"
+
     }
   },
   "pytz": {
     "display_name": "pytz",
-    "version": "2024.1",
+    "version": "2026.1.post1",
     "description": "Часовые пояса — нужен pandas",
     "category": "system",
     "size_mb": 0.5,
@@ -174,12 +175,12 @@
     "pure_python": true,
     "native_syslib": false,
     "abis": {
-      "any": "https://files.pythonhosted.org/packages/90/26/9f1f004a5d021d45a2a7d90147ab785017eb9a1ef2627cf8d216a9d8d529/pytz-2024.1-py2.py3-none-any.whl"
+      "any": "https://files.pythonhosted.org/packages/10/99/781fe0c827be2742bcc775efefccb3b048a3a9c6ce9aec0cbf4a101677e5/pytz-2026.1.post1-py2.py3-none-any.whl"
     }
   },
   "tzdata": {
     "display_name": "tzdata",
-    "version": "2024.1",
+    "version": "2025.3",
     "description": "База данных часовых поясов IANA — нужна pandas на Android",
     "category": "system",
     "size_mb": 0.4,
@@ -188,7 +189,7 @@
     "pure_python": true,
     "native_syslib": false,
     "abis": {
-      "any": "https://files.pythonhosted.org/packages/65/58/f9c9e6be752e9fcb8b6a0ee9fb87e6e7a1f6bcab2cdc73f02bb7ba91ada0/tzdata-2024.1-py2.py3-none-any.whl"
+      "any": "https://files.pythonhosted.org/packages/c7/b0/003792df09decd6849a5e39c28b513c06e84436a54440380862b5aeff25d/tzdata-2025.3-py2.py3-none-any.whl"
     }
   },
   "numpy": {
