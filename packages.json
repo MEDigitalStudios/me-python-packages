@@ -1,62 +1,19 @@
 {
-  "chaquopy-openblas": {
-    "display_name": "OpenBLAS (системная)",
-    "version": "0.2.20",
-    "description": "Нативная библиотека линейной алгебры — обязательна для NumPy/SciPy",
-    "category": "science",
-    "size_mb": 3.5,
-    "depends": [
-      "chaquopy-libgfortran"
-    ],
-    "pip_name": "chaquopy_openblas",
-    "pure_python": false,
-    "libffi": true,
-    "abis": {
-      "arm64-v8a": "https://chaquo.com/pypi-13.1/chaquopy-openblas/chaquopy_openblas-0.2.20-5-py3-none-android_21_arm64_v8a.whl",
-      "armeabi-v7a": "https://chaquo.com/pypi-13.1/chaquopy-openblas/chaquopy_openblas-0.2.20-5-py3-none-android_16_armeabi_v7a.whl",
-      "x86_64": "https://chaquo.com/pypi-13.1/chaquopy-openblas/chaquopy_openblas-0.2.20-5-py3-none-android_21_x86_64.whl",
-      "x86": "https://chaquo.com/pypi-13.1/chaquopy-openblas/chaquopy_openblas-0.2.20-5-py3-none-android_16_x86.whl"
-    }
-  },
   "numpy": {
     "display_name": "NumPy",
     "version": "1.26.2",
     "description": "Многомерные массивы и математика высокой производительности",
     "category": "science",
     "size_mb": 4.8,
-    "depends": [
-      "chaquopy-openblas"
-    ],
+    "depends": [],
     "pip_name": "numpy",
     "pure_python": false,
     "abis": {
-      "arm64-v8a": "https://chaquo.com/pypi-13.1/numpy/numpy-1.26.2-0-cp310-cp310-android_21_arm64_v8a.whl",
+      "arm64-v8a":   "https://chaquo.com/pypi-13.1/numpy/numpy-1.26.2-0-cp310-cp310-android_21_arm64_v8a.whl",
       "armeabi-v7a": "https://chaquo.com/pypi-13.1/numpy/numpy-1.26.2-0-cp310-cp310-android_21_armeabi_v7a.whl",
-      "x86_64": "https://chaquo.com/pypi-13.1/numpy/numpy-1.26.2-0-cp310-cp310-android_21_x86_64.whl",
-      "x86": "https://chaquo.com/pypi-13.1/numpy/numpy-1.26.2-0-cp310-cp310-android_21_x86.whl"
+      "x86_64":      "https://chaquo.com/pypi-13.1/numpy/numpy-1.26.2-0-cp310-cp310-android_21_x86_64.whl",
+      "x86":         "https://chaquo.com/pypi-13.1/numpy/numpy-1.26.2-0-cp310-cp310-android_21_x86.whl"
     }
-  },
-  "pytz": {
-    "display_name": "pytz",
-    "version": "2024.1",
-    "description": "Временные зоны для Python — нужен для pandas",
-    "category": "science",
-    "size_mb": 0.5,
-    "depends": [],
-    "pip_name": "pytz",
-    "pure_python": true,
-    "pip_install": true
-  },
-  "python-dateutil": {
-    "display_name": "python-dateutil",
-    "version": "2.9.0",
-    "description": "Расширенная работа с датами — нужен для pandas",
-    "category": "science",
-    "size_mb": 0.5,
-    "depends": [],
-    "pip_name": "python-dateutil",
-    "pure_python": true,
-    "pip_install": true
   },
   "pandas": {
     "display_name": "Pandas",
@@ -64,18 +21,14 @@
     "description": "Анализ и обработка табличных данных",
     "category": "science",
     "size_mb": 11.0,
-    "depends": [
-      "numpy",
-      "pytz",
-      "python-dateutil"
-    ],
+    "depends": ["numpy"],
     "pip_name": "pandas",
     "pure_python": false,
     "abis": {
-      "arm64-v8a": "https://chaquo.com/pypi-13.1/pandas/pandas-2.1.3-1-cp310-cp310-android_24_arm64_v8a.whl",
+      "arm64-v8a":   "https://chaquo.com/pypi-13.1/pandas/pandas-2.1.3-1-cp310-cp310-android_24_arm64_v8a.whl",
       "armeabi-v7a": "https://chaquo.com/pypi-13.1/pandas/pandas-2.1.3-1-cp310-cp310-android_24_armeabi_v7a.whl",
-      "x86_64": "https://chaquo.com/pypi-13.1/pandas/pandas-2.1.3-1-cp310-cp310-android_24_x86_64.whl",
-      "x86": "https://chaquo.com/pypi-13.1/pandas/pandas-2.1.3-1-cp310-cp310-android_24_x86.whl"
+      "x86_64":      "https://chaquo.com/pypi-13.1/pandas/pandas-2.1.3-1-cp310-cp310-android_24_x86_64.whl",
+      "x86":         "https://chaquo.com/pypi-13.1/pandas/pandas-2.1.3-1-cp310-cp310-android_24_x86.whl"
     }
   },
   "opencv-python": {
@@ -84,16 +37,14 @@
     "description": "Компьютерное зрение: камера, изображения, видео",
     "category": "vision",
     "size_mb": 8.6,
-    "depends": [
-      "numpy"
-    ],
+    "depends": ["numpy"],
     "pip_name": "cv2",
     "pure_python": false,
     "abis": {
-      "arm64-v8a": "https://chaquo.com/pypi-13.1/opencv-python/opencv_python-4.5.1.48-2-cp310-cp310-android_24_arm64_v8a.whl",
+      "arm64-v8a":   "https://chaquo.com/pypi-13.1/opencv-python/opencv_python-4.5.1.48-2-cp310-cp310-android_24_arm64_v8a.whl",
       "armeabi-v7a": "https://chaquo.com/pypi-13.1/opencv-python/opencv_python-4.5.1.48-2-cp310-cp310-android_24_armeabi_v7a.whl",
-      "x86_64": "https://chaquo.com/pypi-13.1/opencv-python/opencv_python-4.5.1.48-2-cp310-cp310-android_24_x86_64.whl",
-      "x86": "https://chaquo.com/pypi-13.1/opencv-python/opencv_python-4.5.1.48-2-cp310-cp310-android_24_x86.whl"
+      "x86_64":      "https://chaquo.com/pypi-13.1/opencv-python/opencv_python-4.5.1.48-2-cp310-cp310-android_24_x86_64.whl",
+      "x86":         "https://chaquo.com/pypi-13.1/opencv-python/opencv_python-4.5.1.48-2-cp310-cp310-android_24_x86.whl"
     }
   },
   "matplotlib": {
@@ -102,16 +53,14 @@
     "description": "Построение графиков и диаграмм",
     "category": "visualization",
     "size_mb": 6.6,
-    "depends": [
-      "numpy"
-    ],
+    "depends": ["numpy"],
     "pip_name": "matplotlib",
     "pure_python": false,
     "abis": {
-      "arm64-v8a": "https://chaquo.com/pypi-13.1/matplotlib/matplotlib-3.6.0-0-cp310-cp310-android_21_arm64_v8a.whl",
+      "arm64-v8a":   "https://chaquo.com/pypi-13.1/matplotlib/matplotlib-3.6.0-0-cp310-cp310-android_21_arm64_v8a.whl",
       "armeabi-v7a": "https://chaquo.com/pypi-13.1/matplotlib/matplotlib-3.6.0-0-cp310-cp310-android_16_armeabi_v7a.whl",
-      "x86_64": "https://chaquo.com/pypi-13.1/matplotlib/matplotlib-3.6.0-0-cp310-cp310-android_21_x86_64.whl",
-      "x86": "https://chaquo.com/pypi-13.1/matplotlib/matplotlib-3.6.0-0-cp310-cp310-android_16_x86.whl"
+      "x86_64":      "https://chaquo.com/pypi-13.1/matplotlib/matplotlib-3.6.0-0-cp310-cp310-android_21_x86_64.whl",
+      "x86":         "https://chaquo.com/pypi-13.1/matplotlib/matplotlib-3.6.0-0-cp310-cp310-android_16_x86.whl"
     }
   },
   "pillow": {
@@ -124,10 +73,10 @@
     "pip_name": "PIL",
     "pure_python": false,
     "abis": {
-      "arm64-v8a": "https://chaquo.com/pypi-13.1/pillow/pillow-11.0.0-0-cp310-cp310-android_24_arm64_v8a.whl",
+      "arm64-v8a":   "https://chaquo.com/pypi-13.1/pillow/pillow-11.0.0-0-cp310-cp310-android_24_arm64_v8a.whl",
       "armeabi-v7a": "https://chaquo.com/pypi-13.1/pillow/pillow-11.0.0-0-cp310-cp310-android_24_armeabi_v7a.whl",
-      "x86_64": "https://chaquo.com/pypi-13.1/pillow/pillow-11.0.0-0-cp310-cp310-android_24_x86_64.whl",
-      "x86": "https://chaquo.com/pypi-13.1/pillow/pillow-11.0.0-0-cp310-cp310-android_24_x86.whl"
+      "x86_64":      "https://chaquo.com/pypi-13.1/pillow/pillow-11.0.0-0-cp310-cp310-android_24_x86_64.whl",
+      "x86":         "https://chaquo.com/pypi-13.1/pillow/pillow-11.0.0-0-cp310-cp310-android_24_x86.whl"
     }
   },
   "scikit-learn": {
@@ -136,16 +85,14 @@
     "description": "Машинное обучение: классификация, регрессия, кластеризация",
     "category": "ml",
     "size_mb": 8.4,
-    "depends": [
-      "numpy"
-    ],
+    "depends": ["numpy"],
     "pip_name": "sklearn",
     "pure_python": false,
     "abis": {
-      "arm64-v8a": "https://chaquo.com/pypi-13.1/scikit-learn/scikit_learn-1.3.2-0-cp310-cp310-android_21_arm64_v8a.whl",
+      "arm64-v8a":   "https://chaquo.com/pypi-13.1/scikit-learn/scikit_learn-1.3.2-0-cp310-cp310-android_21_arm64_v8a.whl",
       "armeabi-v7a": "https://chaquo.com/pypi-13.1/scikit-learn/scikit_learn-1.3.2-1-cp310-cp310-android_21_armeabi_v7a.whl",
-      "x86_64": "https://chaquo.com/pypi-13.1/scikit-learn/scikit_learn-1.3.2-0-cp310-cp310-android_21_x86_64.whl",
-      "x86": "https://chaquo.com/pypi-13.1/scikit-learn/scikit_learn-1.3.2-0-cp310-cp310-android_21_x86.whl"
+      "x86_64":      "https://chaquo.com/pypi-13.1/scikit-learn/scikit_learn-1.3.2-0-cp310-cp310-android_21_x86_64.whl",
+      "x86":         "https://chaquo.com/pypi-13.1/scikit-learn/scikit_learn-1.3.2-0-cp310-cp310-android_21_x86.whl"
     }
   },
   "scipy": {
@@ -154,16 +101,14 @@
     "description": "Научные вычисления: интегралы, уравнения, оптимизация",
     "category": "science",
     "size_mb": 19.0,
-    "depends": [
-      "numpy"
-    ],
+    "depends": ["numpy"],
     "pip_name": "scipy",
     "pure_python": false,
     "abis": {
-      "arm64-v8a": "https://chaquo.com/pypi-13.1/scipy/scipy-1.8.1-1-cp310-cp310-android_21_arm64_v8a.whl",
+      "arm64-v8a":   "https://chaquo.com/pypi-13.1/scipy/scipy-1.8.1-1-cp310-cp310-android_21_arm64_v8a.whl",
       "armeabi-v7a": "https://chaquo.com/pypi-13.1/scipy/scipy-1.8.1-1-cp310-cp310-android_21_armeabi_v7a.whl",
-      "x86_64": "https://chaquo.com/pypi-13.1/scipy/scipy-1.8.1-1-cp310-cp310-android_21_x86_64.whl",
-      "x86": "https://chaquo.com/pypi-13.1/scipy/scipy-1.8.1-1-cp310-cp310-android_21_x86.whl"
+      "x86_64":      "https://chaquo.com/pypi-13.1/scipy/scipy-1.8.1-1-cp310-cp310-android_21_x86_64.whl",
+      "x86":         "https://chaquo.com/pypi-13.1/scipy/scipy-1.8.1-1-cp310-cp310-android_21_x86.whl"
     }
   },
   "chaquopy-libffi": {
@@ -177,28 +122,26 @@
     "pure_python": false,
     "libffi": true,
     "abis": {
-      "arm64-v8a": "https://chaquo.com/pypi-7.0/chaquopy-libffi/chaquopy_libffi-3.3-2-py3-none-android_21_arm64_v8a.whl",
+      "arm64-v8a":   "https://chaquo.com/pypi-7.0/chaquopy-libffi/chaquopy_libffi-3.3-2-py3-none-android_21_arm64_v8a.whl",
       "armeabi-v7a": "https://chaquo.com/pypi-7.0/chaquopy-libffi/chaquopy_libffi-3.3-2-py3-none-android_16_armeabi_v7a.whl",
-      "x86_64": "https://chaquo.com/pypi-7.0/chaquopy-libffi/chaquopy_libffi-3.3-2-py3-none-android_21_x86_64.whl",
-      "x86": "https://chaquo.com/pypi-7.0/chaquopy-libffi/chaquopy_libffi-3.3-2-py3-none-android_16_x86.whl"
+      "x86_64":      "https://chaquo.com/pypi-7.0/chaquopy-libffi/chaquopy_libffi-3.3-2-py3-none-android_21_x86_64.whl",
+      "x86":         "https://chaquo.com/pypi-7.0/chaquopy-libffi/chaquopy_libffi-3.3-2-py3-none-android_16_x86.whl"
     }
   },
   "cffi": {
     "display_name": "cffi",
     "version": "1.17.1",
-    "description": "C Foreign Function Interface — нужен для cryptography",
+    "description": "C Foreign Function Interface — нужен для cryptography и других C-расширений",
     "category": "other",
     "size_mb": 0.5,
-    "depends": [
-      "chaquopy-libffi"
-    ],
+    "depends": ["chaquopy-libffi"],
     "pip_name": "_cffi_backend",
     "pure_python": false,
     "abis": {
-      "arm64-v8a": "https://chaquo.com/pypi-13.1/cffi/cffi-1.17.1-1-cp310-cp310-android_24_arm64_v8a.whl",
+      "arm64-v8a":   "https://chaquo.com/pypi-13.1/cffi/cffi-1.17.1-1-cp310-cp310-android_24_arm64_v8a.whl",
       "armeabi-v7a": "https://chaquo.com/pypi-13.1/cffi/cffi-1.17.1-1-cp310-cp310-android_24_armeabi_v7a.whl",
-      "x86_64": "https://chaquo.com/pypi-13.1/cffi/cffi-1.17.1-1-cp310-cp310-android_24_x86_64.whl",
-      "x86": "https://chaquo.com/pypi-13.1/cffi/cffi-1.17.1-1-cp310-cp310-android_24_x86.whl"
+      "x86_64":      "https://chaquo.com/pypi-13.1/cffi/cffi-1.17.1-1-cp310-cp310-android_24_x86_64.whl",
+      "x86":         "https://chaquo.com/pypi-13.1/cffi/cffi-1.17.1-1-cp310-cp310-android_24_x86.whl"
     }
   },
   "cryptography": {
@@ -207,16 +150,14 @@
     "description": "Шифрование AES, RSA, TLS и другие криптографические примитивы",
     "category": "security",
     "size_mb": 1.1,
-    "depends": [
-      "cffi"
-    ],
+    "depends": ["cffi"],
     "pip_name": "cryptography",
     "pure_python": false,
     "abis": {
-      "arm64-v8a": "https://chaquo.com/pypi-13.1/cryptography/cryptography-42.0.8-0-cp310-cp310-android_24_arm64_v8a.whl",
+      "arm64-v8a":   "https://chaquo.com/pypi-13.1/cryptography/cryptography-42.0.8-0-cp310-cp310-android_24_arm64_v8a.whl",
       "armeabi-v7a": "https://chaquo.com/pypi-13.1/cryptography/cryptography-42.0.8-0-cp310-cp310-android_24_armeabi_v7a.whl",
-      "x86_64": "https://chaquo.com/pypi-13.1/cryptography/cryptography-42.0.8-0-cp310-cp310-android_24_x86_64.whl",
-      "x86": "https://chaquo.com/pypi-13.1/cryptography/cryptography-42.0.8-0-cp310-cp310-android_24_x86.whl"
+      "x86_64":      "https://chaquo.com/pypi-13.1/cryptography/cryptography-42.0.8-0-cp310-cp310-android_24_x86_64.whl",
+      "x86":         "https://chaquo.com/pypi-13.1/cryptography/cryptography-42.0.8-0-cp310-cp310-android_24_x86.whl"
     }
   },
   "psutil": {
@@ -229,27 +170,10 @@
     "pip_name": "psutil",
     "pure_python": false,
     "abis": {
-      "arm64-v8a": "https://chaquo.com/pypi-13.1/psutil/psutil-7.1.3-0-cp310-cp310-android_24_arm64_v8a.whl",
+      "arm64-v8a":   "https://chaquo.com/pypi-13.1/psutil/psutil-7.1.3-0-cp310-cp310-android_24_arm64_v8a.whl",
       "armeabi-v7a": "https://chaquo.com/pypi-13.1/psutil/psutil-7.1.3-0-cp310-cp310-android_24_armeabi_v7a.whl",
-      "x86_64": "https://chaquo.com/pypi-13.1/psutil/psutil-7.1.3-0-cp310-cp310-android_24_x86_64.whl",
-      "x86": "https://chaquo.com/pypi-13.1/psutil/psutil-7.1.3-0-cp310-cp310-android_24_x86.whl"
-    }
-  },
-  "chaquopy-libgfortran": {
-    "display_name": "libgfortran (системная)",
-    "version": "4.9",
-    "description": "Fortran runtime — нужен для OpenBLAS/NumPy",
-    "category": "science",
-    "size_mb": 0.5,
-    "depends": [],
-    "pip_name": "chaquopy_libgfortran",
-    "pure_python": false,
-    "libffi": true,
-    "abis": {
-      "arm64-v8a": "https://chaquo.com/pypi-7.0/chaquopy-libgfortran/chaquopy_libgfortran-4.9-0-py3-none-android_21_arm64_v8a.whl",
-      "armeabi-v7a": "https://chaquo.com/pypi-7.0/chaquopy-libgfortran/chaquopy_libgfortran-4.9-0-py3-none-android_16_armeabi_v7a.whl",
-      "x86_64": "https://chaquo.com/pypi-7.0/chaquopy-libgfortran/chaquopy_libgfortran-4.9-0-py3-none-android_21_x86_64.whl",
-      "x86": "https://chaquo.com/pypi-7.0/chaquopy-libgfortran/chaquopy_libgfortran-4.9-0-py3-none-android_16_x86.whl"
+      "x86_64":      "https://chaquo.com/pypi-13.1/psutil/psutil-7.1.3-0-cp310-cp310-android_24_x86_64.whl",
+      "x86":         "https://chaquo.com/pypi-13.1/psutil/psutil-7.1.3-0-cp310-cp310-android_24_x86.whl"
     }
   }
 }
