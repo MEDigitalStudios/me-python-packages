@@ -1,11 +1,28 @@
 {
+  "chaquopy-openblas": {
+    "display_name": "OpenBLAS (системная)",
+    "version": "0.3.20",
+    "description": "Нативная библиотека линейной алгебры — обязательна для NumPy/SciPy",
+    "category": "science",
+    "size_mb": 3.5,
+    "depends": [],
+    "pip_name": "chaquopy_openblas",
+    "pure_python": false,
+    "libffi": true,
+    "abis": {
+      "arm64-v8a":   "https://chaquo.com/pypi-13.1/chaquopy-openblas/chaquopy_openblas-0.3.20-2-py3-none-android_21_arm64_v8a.whl",
+      "armeabi-v7a": "https://chaquo.com/pypi-13.1/chaquopy-openblas/chaquopy_openblas-0.3.20-2-py3-none-android_16_armeabi_v7a.whl",
+      "x86_64":      "https://chaquo.com/pypi-13.1/chaquopy-openblas/chaquopy_openblas-0.3.20-2-py3-none-android_21_x86_64.whl",
+      "x86":         "https://chaquo.com/pypi-13.1/chaquopy-openblas/chaquopy_openblas-0.3.20-2-py3-none-android_16_x86.whl"
+    }
+  },
   "numpy": {
     "display_name": "NumPy",
     "version": "1.26.2",
     "description": "Многомерные массивы и математика высокой производительности",
     "category": "science",
     "size_mb": 4.8,
-    "depends": [],
+    "depends": ["chaquopy-openblas"],
     "pip_name": "numpy",
     "pure_python": false,
     "abis": {
@@ -153,7 +170,7 @@
   "cffi": {
     "display_name": "cffi",
     "version": "1.17.1",
-    "description": "C Foreign Function Interface — нужен для cryptography и других C-расширений",
+    "description": "C Foreign Function Interface — нужен для cryptography",
     "category": "other",
     "size_mb": 0.5,
     "depends": ["chaquopy-libffi"],
